@@ -141,10 +141,6 @@ footer > div {
         padding-bottom: 20%;
     }
 
-    .container1 >img {
-        align-self: center;
-    }
-
     .container2 {
         display: flex;
     }
