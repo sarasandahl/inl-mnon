@@ -2,8 +2,8 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+/*mobile first, så css är gjord för mobil*/
 /* jag glömde tyvärr att sätta värdet margin och padding 0% för hela dokumentet, kom på detta i slutet av inlämningsperioden */
-
 p {
     line-height: 1.5;
     padding-right: 10%;
@@ -53,11 +53,6 @@ video {
     width: 100%;
 }
 
-/*
-.container2 {
-    margin-bottom: 10%;
-}*/
-
 .container3 {
     position: absolute;
     bottom: 20px;
@@ -89,12 +84,14 @@ footer > div {
     text-align: right;
 }
 
+/*första breakpointen är för läsplattor, det enda jag har ändrat är en font-size för bättre läsbarhet*/
 @media screen and (min-width: 481px) {
     .container3 {
         font-size: small;
     }
 }
 
+/*den andra breakpointen är för småskärmar och nu är det mer förändringar för nu vill jag få text och bilder bredvid varandra likt pdf:en*/
 @media screen and (min-width: 769px) { 
     .lefttext {
         padding-left: 20%;
@@ -150,7 +147,7 @@ footer > div {
         padding-top: 15%;
     }
   /*Jag vill egentligen att bilden i container2 ska närmare texten som är under likt pdf:en, men bilden har white space runt sig så går inte att komma närmare*/
-
+  
     .container3 {
         font-size: medium;
         margin-bottom: 70px;
@@ -173,8 +170,15 @@ footer > div {
     }
 }
 
+/*dessa två sista är för större skärmar. Det enda jag vill ändra för läsbarheten är textstorlek*/
 @media screen and (min-width: 1025px) {
     .container3 {
         font-size: large;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    * {
+        font-size: x-large;
     }
 }
